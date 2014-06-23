@@ -1,4 +1,23 @@
 pysub
 =====
 
-Subtitle Downloader using python
+Subtitle Downloader using python for English Languages
+
+Author
+======
+Araj P Raju
+arajparaj@gmail.com
+
+Usage
+=====
+
+''' python subtitle.py [Your Video Directory]'''
+
+To Do
+=====
+
+* Implement Multithreading
+* Add Another Language Support
+
+
+
