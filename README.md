@@ -13,7 +13,7 @@ Usage
 
 ```shell
 python subtitle.py [Your Video Directory]
-'''
+```
 
 To Do
 =====
