@@ -1,7 +1,7 @@
 pysub
 =====
 
-Subtitle Downloader using python for English Languages
+Subtitle Downloader using python for English
 
 Author
 ======
