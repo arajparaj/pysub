@@ -11,7 +11,9 @@ arajparaj@gmail.com
 Usage
 =====
 
-''' python subtitle.py [Your Video Directory]'''
+```shell
+python subtitle.py [Your Video Directory]
+'''
 
 To Do
 =====
