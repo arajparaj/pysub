@@ -5,8 +5,7 @@ Subtitle Downloader using python for English Languages
 
 Author
 ======
-Araj P Raju
-arajparaj@gmail.com
+Araj P Raju [arajparaj@gmail.com]
 
 Usage
 =====
