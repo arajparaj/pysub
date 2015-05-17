@@ -1,7 +1,12 @@
+
+#!/usr/bin/python -tt
+
 import os
 import hashlib
 import urllib2
 import sys
+
+from PyQt4 import QtGui,QtCore
 
 def get_hash(name):
         readsize = 64 * 1024
@@ -44,5 +49,23 @@ def processFile(currentDir):
             print('entering to directory %s'%curFile)
             processFile(curFile)
 
-folder = sys.argv[1]
-processFile(folder)
+if __name__ == "__main__" :
+	
+	app = QtGui.QApplication(sys.argv)
+	
+	widget = QtGui.QWidget()
+	widget.resize(500, 250)
+		
+	screen = QtGui.QDesktopWidget().screenGeometry()
+	widget_size = widget.geometry()
+	
+	widget.move((screen.width()-widget_size.width())/2,(screen.height()-widget_size.height())/2)
+		
+	widget.setWindowTitle('https://github.com/arajparaj/pysub')
+	widget.setWindowIcon(QtGui.QIcon('exit.png'))
+	
+	foldername = QtGui.QFileDialog.getExistingDirectory(widget,'Choose a Video Folder directory')
+	if foldername:
+		processFile(str(foldername))
+	else :
+		print "please input a valid folder name"
